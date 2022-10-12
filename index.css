@@ -25,11 +25,9 @@ body {
 .flex-container{
   display: flex;
   align-content: space-between;
-
 }
 
- .container1, .container2,.container3{ 
-
+ .container1, .container2,.container3{   
   text-align: center;
   width: 300px;
   margin: 100px auto;  
@@ -38,6 +36,21 @@ body {
   align-items: center;
   background-color:#efc76d;  
  }
+
+ @media(max-width: 1024px){
+  .flex-container{
+    flex-direction: column;
+  }
+  .container1, .container2,.container3{
+    width: 90%;
+    margin: 100px auto;  
+    border-radius: 50px;
+    align-content: center;
+    align-items: center;
+    background-color:#efc76d; 
+  }
+
+}
 
  #id{
    color: #000;
